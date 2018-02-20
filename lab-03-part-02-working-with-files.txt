@@ -171,7 +171,9 @@ less pg1232.txt
 
 more pg1232.txt
 
+spacebar brings in more or less of the file.
 
+q ends the file.
 ==========
 20. Describe what situations you would use the following commands for viewing files: less, more, cat, tail, head
 
