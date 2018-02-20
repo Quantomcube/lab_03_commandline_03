@@ -36,7 +36,7 @@ $ touch foo.txt
 $ ls
 Copy and paste the output below.
 ----------
-
+foo.txt
 
 
 ==========
@@ -44,7 +44,7 @@ Copy and paste the output below.
 
 $ touch bar.txt
 ----------
-
+foo.txt bar.txt 
 
 
 ==========
@@ -53,6 +53,8 @@ $ touch bar.txt
 Copy and paste the output below.
 ----------
 
+-rw-r--r--  1 student  staff  0 Feb 20 15:54 bar.txt
+-rw-r--r--  1 student  staff  0 Feb 20 15:53 foo.txt
 
 
 ==========
@@ -62,7 +64,7 @@ Copy and paste the output below.
 Write the command that you used to copy the file.  Additionally, copy and paste the output of your file listing below.
 ----------
 
-
+bar.txt	baz.txt	foo.txt
 
 ==========
 10. Delete the file called bar.txt and then list the files again.
@@ -76,7 +78,7 @@ Write the command that you used to remove the file.  Copy and paste the output o
 Write the command that you used to move the file.  Copy and paste the output of your file listing below.
 ----------
 
-
+baz.txt	qux.txt
 
 ==========
 12. Go up one directory so that you're in ~/mtec1002-lab-03.
@@ -90,7 +92,9 @@ Write the command that you used to move the file.  Copy and paste the output of 
 
 Write out the command that you used and what happened.
 ----------
+rmdir my_files
 
+rmdir: my_files/: Directory not empty
 
 
 ==========
@@ -98,7 +102,9 @@ Write out the command that you used and what happened.
 
 Write out the command that you used and what happened.
 ----------
+rm my_files
 
+rm: my_files/: is a directory
 
 
 ==========
@@ -120,7 +126,7 @@ Use the command called cat on the file to show its contents.
 
 Describe what happened below.
 ----------
-
+the command open an e-book file
 
 
 ==========
@@ -132,7 +138,9 @@ Use the command, head, on the file to show the contents of the beginning of the 
 
 Write the command that you used below.  Write the last line of the output below (it should be the title).
 ----------
+head pg1232.txt
 
+Title: The Prince
 
 
 ==========
@@ -144,7 +152,10 @@ Use tail on the file to show the contents of the end of the file.
 
 Write the command that you used below.  Write the last line of the output below (it should be the title).
 ----------
-
+This Web site includes information about Project Gutenberg-tm,
+including how to make donations to the Project Gutenberg Literary
+Archive Foundation, how to help produce our new eBooks, and how to
+subscribe to our email newsletter to hear about new eBooks.
 
 
 ==========
@@ -156,7 +167,9 @@ Use less and more on the file to show the contents of the file.  Try pressing sp
 
 Write the command that you used below.  Describe what spacebar and q does after using either less or more.
 ----------
+less pg1232.txt
 
+more pg1232.txt
 
 
 ==========
@@ -164,15 +177,19 @@ Write the command that you used below.  Describe what spacebar and q does after 
 
 (Some characteristics that may help your description might be the length of the file, whether or not you'd like to read the whole thing... or just the beginning or end, etc.)
 ----------
-
+These commands are used in which to make viewing long txt files and make it easier to understand.
 
 
 ==========
 21.  How many words are in pg1232.txt?  What command did you use to determine the word count?
 ----------
+wc pg1232.txt
 
-
+52639
 
 ==========
 22.  How many lines are in pg1232.txt?  What command did you use to determine the line count?
 ----------
+wc -l pg1232.txt
+
+5063
